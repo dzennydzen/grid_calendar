@@ -122,17 +122,12 @@ body {
             background-color: #a5d4dd;
             transition: all .2s ease;
 
-            // &:nth-child(1) {
-            //     background-color: #6f9fcc;
-            // }
-
             &:hover {
                 background-color: #6f9fcc;
             }
         }
 
         .number__box {
-
             font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
             font-size: 30px;
 
@@ -173,23 +168,4 @@ body {
             gap: 20px 25px;
         }
     }
-
-
-
-//    .calendar {
-//         height: 100%;
-//         display: grid;
-//         grid-template-columns: repeat(7, 1fr);
-//         grid-template-rows: 2vw 8vw 8vw 8vw 8vw 8vw;
-//         gap: 37px 46px;
-
-//         div {
-//             border: 1px solid black;
-//         }
-
-//         .week_day {
-
-//         }
-    
-//     }
 } 
