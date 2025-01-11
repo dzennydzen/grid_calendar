@@ -1,0 +1,195 @@
+body {
+
+    @keyframes gradient-move {
+        0% {
+          background-position: 0 50%;
+        }
+        
+        50% {
+          background-position: 100% 80%;
+        }
+      
+        100% {
+          background-position: 0 50%;
+        }
+    }
+
+
+    height: 100%;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    color: rgb(54, 56, 58);
+
+
+    .wrapper {
+        margin: 78px 78px 0 78px;
+        
+     
+        padding: 2vw;
+
+        overflow: hidden;
+
+        position: relative;
+
+        background: linear-gradient(210deg, #839cf4 20%, #bda8ea 35%, #ddbbe2 75%);
+        background-size: 200%;
+        animation: gradient-move 3s ease-out infinite;
+    }
+    
+    .header__wrapper, .footer__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        position: relative;
+    }
+
+    .footer__wrapper {
+        align-items: end;
+    }
+
+
+    .footer_title {
+        margin-bottom: 0;
+        font-size: 25px;
+    }
+
+    footer .input {
+        width: 20vw;
+    }
+
+
+    header {
+        
+        .header_title {
+            background-color: rgba(191, 192, 238, 0.5);
+            font-size: 70px;
+            border: 2px dotted rgba(0,0,0,0.5);
+            border-left: transparent;
+            border-right: transparent;
+
+            flex: 1;
+            text-align: center;
+            z-index: 1;
+        }
+
+        .header_fields {
+            position: absolute;
+            right: 0;
+            z-index: 1;
+
+            display: flex;
+            flex-direction: column;
+            align-items: end;
+
+
+            .input {
+
+                &:nth-child(1) {
+                    width: 10vw;
+                }
+                &:nth-child(2) {
+                    width: 20vw;
+                }
+            }
+        }
+    }
+
+    input {
+        height: 25px;
+        border-top: transparent;
+        border-left: transparent;
+        border-right: transparent;
+        border-bottom: 2px solid black;
+        
+        outline: none;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-style: italic;
+        font-size: 20px;
+
+        text-align: end;
+        background-color: transparent;
+    }
+
+    main {
+        .week_day {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: 22px;
+
+            text-align: center;
+
+            background-color: #a5d4dd;
+            transition: all .2s ease;
+
+            // &:nth-child(1) {
+            //     background-color: #6f9fcc;
+            // }
+
+            &:hover {
+                background-color: #6f9fcc;
+            }
+        }
+
+        .number__box {
+
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 30px;
+
+            border-radius: 5px;
+
+            background-color: #d1d6e4;
+            overflow: hidden;
+
+            transition: all .3s ease;
+
+            &:hover {
+                background-color: #e5d2e0;
+                border: 2px solid rgb(83, 74, 74);
+                border-radius: 5px;
+            }
+        }
+
+        .number {
+            margin: 5%; 
+            height: 100%;
+
+            transition: all .1s ease;
+
+            &:hover {
+                color: #d64949;
+                font-size: 32px;
+            }
+        }
+
+        .empty {
+            background-color: #bfc0c2;
+        }
+
+        .calendar {
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            grid-template-rows: 1fr 5fr 5fr 5fr 5fr 5fr;
+            gap: 20px 25px;
+        }
+    }
+
+
+
+//    .calendar {
+//         height: 100%;
+//         display: grid;
+//         grid-template-columns: repeat(7, 1fr);
+//         grid-template-rows: 2vw 8vw 8vw 8vw 8vw 8vw;
+//         gap: 37px 46px;
+
+//         div {
+//             border: 1px solid black;
+//         }
+
+//         .week_day {
+
+//         }
+    
+//     }
+} 
