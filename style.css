@@ -94,7 +94,7 @@ body main .number__box {
   border-radius: 5px;
   background-color: #d1d6e4;
   overflow: hidden;
-  transition: color 0.3s ease-in;
+  transition: color 0.6s ease-in;
 }
 body main .number__box:hover {
   background-color: #e5d2e0;
@@ -104,7 +104,7 @@ body main .number__box:hover {
 body main .number {
   margin: 5%;
   height: 100%;
-  transition: color 0.1s ease-in;
+  transition: color 0.2s ease-in;
 }
 body main .number:hover {
   color: #d64949;
